@@ -1,0 +1,40 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+  
+    string Visitor;
+ int Month;
+  int Day;
+  int Year;
+  
+  int LeapYear = Year % 4;
+
+     cout<< " Hello, I am Ben !!! Welcome to my first C++ application " << endl;
+
+      cout<< " Hey! What is your name: _______" << endl; 
+      cin>> Visitor;
+      
+      cout<< "Good day " <<Visitor << "! It's nice meet you ! " << endl ;
+      
+          cout<< "\n When is your Birthday? "  <<endl;
+          
+         cout <<" Month : " <<endl;
+          cin>> Month;
+         cout << "Day : " << endl;
+             cin>> Day;
+        cout << " Year: " <<endl;
+ cin>> Year;
+ cout << "your Birthday is on " << Month << Day << Year<< endl;
+ cout<< LeapYear << endl;
+
+
+if (LeapYear == 0)
+cout<< "your Year is a leap Year" ;
+else 
+cout<< " Your Year is not a leap";
+ 
+ 
+ 
+    return 0;
+}
