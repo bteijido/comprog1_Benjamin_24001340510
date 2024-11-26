@@ -1,0 +1,52 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    double num1, num2;
+    int operation;
+    bool C = true; 
+    
+    do {
+       
+        cout << "Enter first number: ";
+        cin >> num1;
+        cout << "Enter second number: ";
+        cin >> num2;
+
+       
+        cout << "[1] Add \n[2] Subtract \n[3] Multiply \n[4] Divide \nEnter operator: ";
+        cin >> operation;
+
+   
+        if (operation == 1) {  
+            cout << "Result: " << num1 + num2 << endl;
+        }
+        else if (operation == 2) {  
+            cout << "Result: " << num1 - num2 << endl;
+        }
+        else if (operation == 3) { 
+            cout << "Result: " << num1 * num2 << endl;
+        }
+        else if (operation == 4) {  
+            
+                cout << "Result: " << num1 / num2 << endl;
+          
+        }
+
+
+       
+      string select;
+        cout << "Do you want to continue? [Yes/No]: ";
+        cin >> select;
+
+        
+        if (select != "Yes" && select != "yes") {
+            C = false;  
+        }
+
+    } while (C);  
+
+
+
+    return 0;
+}
